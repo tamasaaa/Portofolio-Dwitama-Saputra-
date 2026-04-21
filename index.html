@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwitama Saputra | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold tracking-tighter">
+                DWITAMA<span class="text-red-600">.</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="nav-link text-sm font-medium">HOME</a>
+                <a href="#about" class="nav-link text-sm font-medium">PROFIL</a>
+                <a href="#experience" class="nav-link text-sm font-medium">PENGALAMAN</a>
+                <a href="#education" class="nav-link text-sm font-medium">PENDIDIKAN</a>
+                <a href="#skills" class="nav-link text-sm font-medium">KEMAMPUAN</a>
+                <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">KONTAK</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-black/95 absolute w-full px-6 py-8 border-b border-red-600/20 hidden">
+            <div class="flex flex-col space-y-6 text-center">
+                <a href="#home" class="mobile-link text-lg">HOME</a>
+                <a href="#about" class="mobile-link text-lg">PROFIL</a>
+                <a href="#experience" class="mobile-link text-lg">PENGALAMAN</a>
+                <a href="#education" class="mobile-link text-lg">PENDIDIKAN</a>
+                <a href="#skills" class="mobile-link text-lg">KEMAMPUAN</a>
+                <a href="#contact" class="text-red-600 text-lg font-bold">KONTAK</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <p class="text-red-600 font-bold tracking-widest mb-4">SELAMAT DATANG</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    Saya <span class="text-gradient">Dwitama Saputra</span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed">
+                    Lulusan Multimedia yang berorientasi pada detail dengan pengalaman magang di PT Pegadaian. Ahli dalam administrasi dan pengoperasian Microsoft Office.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="btn-primary px-8 py-4 rounded-full font-bold flex items-center">
+                        Hire Me <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <button onclick="window.print()" class="btn-outline px-8 py-4 rounded-full font-bold">
+                        Download CV
+                    </button>
+                </div>
+                <div class="mt-12 flex gap-6 text-2xl text-gray-400">
+                    <a href="#" class="hover:text-red-600 transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-red-600 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-600 transition-colors"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hidden md:block" data-aos="fade-left">
+                <div class="glow-container">
+                    <img src="https://via.placeholder.com/600x600/151515/ff0000?text=DWITAMA" alt="Profile" class="rounded-2xl border-2 border-red-600/30 grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-6 -left-6 bg-red-600 p-6 rounded-xl shadow-2xl">
+                        <p class="text-3xl font-black italic">FAST</p>
+                        <p class="text-xs font-bold uppercase tracking-widest">Administrative Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-[#0c0c0c]">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-6">Profil <span class="text-red-600">Profesional</span></h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    Lulusan Multimedia dengan keahlian teknis tingkat lanjut dalam pengoperasian Microsoft Office (Excel, Word, PowerPoint) dan perangkat lunak administratif. Terbukti mampu mengelola dokumentasi perusahaan dengan akurasi 100% dan mendukung efisiensi operasional tim melalui manajemen waktu yang disiplin.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Pengalaman <span class="text-red-600">Kerja</span></h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card p-8 rounded-2xl relative" data-aos="zoom-in">
+                    <div class="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-20 bg-red-600 hidden md:block"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-6 gap-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Internship (Praktik Kerja Lapangan)</h3>
+                            <p class="text-red-600 font-bold">PT Pegadaian Area Tangerang</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-red-600/20 text-red-500 px-4 py-1 rounded-full text-sm font-bold">Nov 2022 — Jan 2023</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 mt-1 mr-3"></i>
+                            <span>Mengelola dan mengarsipkan lebih dari 50+ dokumen operasional harian dengan sistem penomoran sistematis, meningkatkan kecepatan temu kembali dokumen sebesar 20%.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 mt-1 mr-3"></i>
+                            <span>Mendukung efisiensi administratif staf tetap dengan menyelesaikan tugas input data dan penyusunan laporan rutin secara tepat waktu dengan tingkat kesalahan 0%.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 mt-1 mr-3"></i>
+                            <span>Memproduksi 10+ materi visual internal (poster/infografis) menggunakan Photoshop dan Canva.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 mt-1 mr-3"></i>
+                            <span>Mengkoordinasikan distribusi dokumen antar departemen secara proaktif.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 px-6 bg-[#0c0c0c]">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-bold mb-10">Pendidikan</h2>
+                <div class="card p-6 rounded-2xl border-l-4 border-l-red-600">
+                    <h3 class="text-xl font-bold">SMK Dharma Siswa</h3>
+                    <p class="text-red-500 font-medium mb-4">Jurusan Multimedia (2021 — 2024)</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Mempelajari manajemen sistem komputer & desain komunikasi visual.</li>
+                        <li>• Fokus pada efisiensi penggunaan perangkat lunak perkantoran.</li>
+                    </ul>
+                </div>
+                
+                <h2 class="text-3xl font-bold mt-12 mb-10">Sertifikasi</h2>
+                <div class="space-y-4">
+                    <div class="card p-4 rounded-xl flex items-center gap-4">
+                        <div class="bg-red-600/20 p-3 rounded-lg"><i class="fas fa-certificate text-red-500"></i></div>
+                        <div>
+                            <p class="font-bold">Desain Grafis Muda — BNSP</p>
+                            <p class="text-xs text-gray-500">2024</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 rounded-xl flex items-center gap-4">
+                        <div class="bg-red-600/20 p-3 rounded-lg"><i class="fas fa-award text-red-500"></i></div>
+                        <div>
+                            <p class="font-bold">Certificate of Internship — PT Pegadaian</p>
+                            <p class="text-xs text-gray-500">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" data-aos="fade-left">
+                <h2 class="text-3xl font-bold mb-10">Kemampuan Utama</h2>
+                
+                <div class="mb-8">
+                    <h4 class="text-red-600 font-bold uppercase text-xs tracking-widest mb-4">Administrasi</h4>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Manajemen Dokumen</span>
+                        <span class="skill-badge">Data Entry</span>
+                        <span class="skill-badge">Filing System</span>
+                        <span class="skill-badge">Korespondensi Bisnis</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h4 class="text-red-600 font-bold uppercase text-xs tracking-widest mb-4">Software</h4>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Microsoft Excel (Expert)</span>
+                        <span class="skill-badge">Microsoft Word (Expert)</span>
+                        <span class="skill-badge">Google Workspace</span>
+                        <span class="skill-badge">Adobe Photoshop</span>
+                        <span class="skill-badge">Canva</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-red-600 font-bold uppercase text-xs tracking-widest mb-4">Kompetensi Softskill</h4>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Ketelitian Tinggi</span>
+                        <span class="skill-badge">Manajemen Waktu</span>
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">Komunikasi Profesional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div class="container mx-auto">
+            <div class="max-w-5xl mx-auto bg-red-600 rounded-3xl p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+                
+                <div class="grid md:grid-cols-2 gap-12 relative z-10 items-center">
+                    <div>
+                        <h2 class="text-4xl font-black mb-6">Ayo Bekerja Bersama!</h2>
+                        <p class="text-red-100 text-lg mb-8">
+                            Siap memberikan dukungan administratif yang cekatan dan profesional untuk tim Anda.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-phone"></i></div>
+                                <span>+62 88975919652</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-envelope"></i></div>
+                                <span>dwitamasaputraa@gmail.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-map-marker-alt"></i></div>
+                                <span>Jl. Sedap Malam I No.179B</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black/20 p-8 rounded-2xl backdrop-blur-sm">
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Nama Anda" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-white text-white placeholder:text-white/50">
+                            <input type="email" placeholder="Email Anda" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-white text-white placeholder:text-white/50">
+                            <textarea placeholder="Pesan Anda" rows="4" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-white text-white placeholder:text-white/50"></textarea>
+                            <button type="button" class="w-full bg-white text-red-600 font-bold py-4 rounded-xl hover:bg-gray-100 transition-colors">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500">
+        <p>© 2024 Dwitama Saputra. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="tama.js"></script>
+</body>
+</html>
